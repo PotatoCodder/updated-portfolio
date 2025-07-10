@@ -6,7 +6,7 @@ import profile from '../../assets/images/profile.jpg'
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100 py-20">
+    <section id="home" className="bg-gradient-to-b from-white to-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         {/* Left: Text Content */}
@@ -18,8 +18,8 @@ export default function Hero() {
             I’m Konoe, a full-stack dev crafting fast, clean, and modern web experiences. Let’s make something amazing together.
           </p>
           <div className="flex space-x-4">
-            <Button size="lg">View Projects</Button>
-            <Button size="lg" variant="outline">Contact Me</Button>
+            <Button size="lg"><a href="#projects">View Projects</a></Button>
+            <Button size="lg" variant="outline"><a href="#footer">Contact Me</a></Button>
           </div>
         </div>
 

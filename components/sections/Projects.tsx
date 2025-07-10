@@ -96,7 +96,7 @@ export default function Projects() {
       <h3 className="text-3xl font-bold text-gray-900 mb-8 border-b pb-3 pl-1 border-indigo-200 shadow-sm bg-gradient-to-r from-white to-indigo-50 rounded-md inline-block w-fit animate-fadeUp">
         {title}
       </h3>
-      <div className="grid gap-10">
+      <div id="projects" className="grid gap-10">
         {projects.map((project, index) => {
           const isOpen = openIndex === index
 
