@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import profile from '../../assets/images/profile.jpg'
 
 export default function Hero() {
   return (
@@ -23,15 +24,14 @@ export default function Hero() {
         </div>
 
         {/* Right: Image or Illustration */}
-        <div className="relative w-full h-[350px] md:h-[400px]">
+        <div className="relative w-[250px] h-[250px] mx-auto rounded-full overflow-hidden shadow-xl ring-4 ring-indigo-200">
           <Image
-            src="/hero-dev.svg" // Replace with your own image or use an AI one
-            alt="Developer at work"
+            src={profile}
+            alt="Profile Picture"
             fill
-            className="object-contain"
+            className="object-cover"
           />
         </div>
-
       </div>
     </section>
   )

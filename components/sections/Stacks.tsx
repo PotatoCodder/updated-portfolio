@@ -12,7 +12,7 @@ const logos = [
   { name: "Laravel", src: "/logos/laravel.svg" },
   { name: "MongoDB", src: "/logos/mongodb.svg" },
   { name: "Firebase", src: "/logos/firebase.svg" },
-  { name: "Linux", src: "/logos/linux.svg" },
+  { name: "Linux", src: "../" },
   { name: "ML", src: "/logos/ml.svg" },
   { name: "Cybersec", src: "/logos/security.svg" },
 ]
@@ -21,10 +21,6 @@ export default function Stack() {
   return (
     <section className="bg-white py-20 border-t overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
-          My Tech Stacks
-        </h2>
-
         <div className={styles.trackWrapper}>
           {logos.map((tech, index) => (
             <div
